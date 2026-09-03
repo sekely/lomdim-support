@@ -1,6 +1,6 @@
 # מדיניות פרטיות — לומדים
 
-עדכון אחרון: ספטמבר 2026
+עדכון אחרון: ספטמבר 2026 (עודכן: ייבוא מתמונה)
 
 אפליקציית **לומדים** נבנתה כך שכל המידע נשאר אצלך.
 
@@ -19,6 +19,15 @@
 
 אם הפעלת גיבוי מכשיר של Apple (iCloud Backup / גיבוי מוצפן למחשב), נתוני האפליקציה עשויים
 להיכלל בגיבוי הזה בהתאם להגדרות שלך מול Apple. הגיבוי מנוהל על ידי Apple ואינו נגיש למפתח.
+
+## ייבוא מערכת שעות מתמונה (אופציונלי)
+
+אם תבחרו להשתמש בתכונה **"ייבוא מתמונה"** במסך עריכת המערכת, התמונות שתבחרו יישלחו
+לשירות **Google Gemini** לצורך זיהוי הטקסט במערכת בלבד. השליחה נעשית באמצעות מפתח API
+אישי וחינמי שאתם יוצרים בעצמכם ומזינים באפליקציה; המפתח נשמר מקומית על המכשיר בלבד
+ואינו משותף עם המפתח. השימוש ב-Google Gemini כפוף למדיניות הפרטיות ולתנאי השימוש של
+Google. אם לא תשתמשו בתכונה זו — שום תמונה או מידע אינם נשלחים לשום מקום, והאפליקציה
+עובדת במלואה ללא חיבור לאינטרנט.
 
 ## התראות
 
@@ -41,7 +50,7 @@
 
 # Privacy Policy — Lomdim (English)
 
-Last updated: September 2026
+Last updated: September 2026 (updated: photo import)
 
 **Lomdim** is built so that all your data stays with you.
 
@@ -62,6 +71,15 @@ delete the app.
 If you use Apple device backup (iCloud Backup / encrypted computer backup), the app's
 data may be included in that backup according to your settings with Apple. Backups are
 managed by Apple and are not accessible to the developer.
+
+## Importing a timetable from a photo (optional)
+
+If you choose to use the **"Import from photo"** feature in the timetable editor, the images
+you select are sent to **Google Gemini** solely to read the text in the timetable. This is done
+with a personal, free API key that you create yourself and enter in the app; the key is stored
+only on your device and is never shared with the developer. Use of Google Gemini is subject to
+Google's own privacy policy and terms. If you do not use this feature, no image or data is sent
+anywhere and the app works fully offline.
 
 ## Notifications
 
