@@ -35,7 +35,7 @@
 
 ## יצירת קשר
 
-לשאלות בנושא פרטיות: <כתובת אימייל / דרך יצירת קשר>
+לשאלות בנושא פרטיות: ysekely@gmail.com
 
 ---
 
@@ -78,4 +78,4 @@ Updates to this policy will be posted on this page with a new date.
 
 ## Contact
 
-For privacy questions: <email / contact method>
+For privacy questions: ysekely@gmail.com
