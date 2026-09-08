@@ -41,6 +41,17 @@
   גישה לחשבון Google שלך ואין לו עלות כלשהי בגין השימוש שלך.
 - שימוש ב-Google Gemini כפוף למדיניות הפרטיות ולתנאי השימוש של Google.
 
+## הוספה ליומן (אופציונלי)
+
+אם תבחרו להוסיף מבחן או מועד הגשה ליומן:
+
+- **יומן אפל** — האפליקציה מבקשת הרשאת **כתיבה בלבד** ויוצרת אירוע אחד במכשיר.
+  היא אינה קוראת את היומן שלכם, אינה מסנכרנת ממנו ואינה רואה אירועים אחרים.
+- **Google Calendar** — נפתח קישור "יצירת אירוע" ממולא מראש בדפדפן או באפליקציה של Google.
+  אין התחברות לחשבון Google מתוך האפליקציה, ולא נשמרים אסימוני גישה כלשהם.
+
+הייצוא חד־כיווני בלבד, ונעשה רק בלחיצה יזומה שלכם.
+
 ## הרשאות
 
 - **התראות** — כדי להציג תזכורות. אפשר לאשר או לדחות, והאפליקציה עובדת גם בלי ההרשאה.
@@ -103,6 +114,17 @@ If you choose to use the "Import from a photo" feature in the timetable editor:
   Google account. The app developer has no access to your Google account and bears no
   cost for your usage.
 - Use of Google Gemini is subject to Google's privacy policy and terms of service.
+
+## Adding to your calendar (optional)
+
+If you choose to add an exam or a due date to your calendar:
+
+- **Apple Calendar** — the app requests **write-only** access and creates a single event on
+  your device. It never reads your calendar, never syncs from it, and cannot see other events.
+- **Google Calendar** — a pre-filled "create event" link opens in your browser or the Google
+  Calendar app. There is no Google sign-in inside the app and no access tokens are stored.
+
+The export is one-way only, and happens only when you tap it.
 
 ## Permissions
 
