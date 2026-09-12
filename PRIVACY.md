@@ -1,6 +1,6 @@
 # מדיניות פרטיות — לומדים
 
-עדכון אחרון: ספטמבר 2026 (עודכן: ייבוא מתמונה — עלות ואבטחת מפתח)
+עדכון אחרון: ספטמבר 2026 (עודכן: מסך הסכמה ותנאי השכבה החינמית של Gemini)
 
 אפליקציית **לומדים** נבנתה כך שכל המידע נשאר אצלך.
 
@@ -39,6 +39,10 @@
 - **עלות:** ל-Google Gemini יש שכבת שימוש חינמית שמספיקה לקריאת מערכת שעות. Google לא
   תחייב אותך אלא אם תפעיל חיוב (billing) בעצמך בחשבון Google שלך. למפתח האפליקציה אין
   גישה לחשבון Google שלך ואין לו עלות כלשהי בגין השימוש שלך.
+- **הסכמה:** לפני השליחה הראשונה האפליקציה מציגה מסך הסבר ומבקשת הסכמה מפורשת. אפשר לבטל בכל רגע.
+- **שכבה חינמית:** לפי תנאי Google, תוכן שנשלח דרך השכבה החינמית של Gemini API עשוי לשמש
+  את Google לשיפור המוצרים שלה, וייתכן שייבדק על ידי בני אדם. זו הסיבה שהאפליקציה שולחת
+  רק את התמונות שבחרתם, ורק אחרי שאישרתם.
 - שימוש ב-Google Gemini כפוף למדיניות הפרטיות ולתנאי השימוש של Google.
 
 ## הוספה ליומן (אופציונלי)
@@ -69,7 +73,7 @@
 
 # Privacy Policy — Lomdim (English)
 
-Last updated: September 2026 (updated: photo import — cost and key security)
+Last updated: September 2026 (updated: consent screen and Gemini free-tier terms)
 
 **Lomdim** is built so that all your data stays with you.
 
@@ -113,6 +117,11 @@ If you choose to use the "Import from a photo" feature in the timetable editor:
   timetable. Google will not charge you unless you enable billing yourself in your own
   Google account. The app developer has no access to your Google account and bears no
   cost for your usage.
+- **Consent:** before the first upload the app shows an explanation screen and asks for your
+  explicit permission. You can cancel at any time.
+- **Free tier:** under Google's terms, content sent through the free tier of the Gemini API may
+  be used by Google to improve its products, and may be reviewed by humans. That is why the app
+  sends only the photos you chose, and only after you agreed.
 - Use of Google Gemini is subject to Google's privacy policy and terms of service.
 
 ## Adding to your calendar (optional)
