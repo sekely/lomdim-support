@@ -1,6 +1,6 @@
 # מדיניות פרטיות — לומדים
 
-עדכון אחרון: ספטמבר 2026 (עודכן: מסך הסכמה ותנאי השכבה החינמית של Gemini)
+עדכון אחרון: ספטמבר 2026 (עודכן: יצירת כרטיסיות עם AI ומד שימוש)
 
 אפליקציית **לומדים** נבנתה כך שכל המידע נשאר אצלך.
 
@@ -26,23 +26,28 @@
 האפליקציה מתזמנת התראות מקומיות (תזכורות למבחנים ולמועדי הגשה) דרך מערכת ההפעלה.
 ההתראות נוצרות ונשלחות במכשיר עצמו; שום מידע אינו נשלח החוצה.
 
-## ייבוא מערכת שעות מתמונה (אופציונלי)
+## תכונות AI: ייבוא מערכת מתמונה ויצירת כרטיסיות (אופציונלי)
 
-אם תבחר להשתמש בתכונה "ייבוא מתמונה" במסך עריכת המערכת:
+שתי תכונות באפליקציה משתמשות ב-**Google Gemini**, ושתיהן אופציונליות ופועלות רק ביוזמתך:
 
-- **התמונות** שתבחר יישלחו לשירות **Google Gemini** לצורך זיהוי הטקסט במערכת בלבד.
+- **ייבוא מתמונה:** **התמונות** שתבחר יישלחו ל-Gemini לצורך זיהוי הטקסט במערכת בלבד.
   התמונות אינן נשמרות אצלנו ואינן נשלחות לשום גורם אחר. לפני השליחה התמונה מקודדת מחדש,
   כך שנתוני מיקום (GPS) ומטא-דאטה אחרת מוסרים ממנה.
+- **יצירת כרטיסיות עם AI:** כשתבקש זאת, **הטקסט** של הערת שיעור או של "מה צריך ללמוד"
+  במבחן נשלח ל-Gemini יחד עם שם המקצוע, כדי לנסח שאלות ותשובות. לא נשלח שום דבר אחר —
+  לא המערכת, לא שיעורי הבית, לא הציונים. אתה מאשר כל כרטיסייה לפני שהיא נשמרת.
+- **הגבלה עצמית:** האפליקציה מגבילה את עצמה ל-20 פעולות AI ביום ומציגה במסך "אודות"
+  כמה פעולות וכמה טוקנים נשלחו, לפי הספירה של Google.
 - **מפתח ה-API** הנדרש לשליחה הוא מפתח אישי וחינמי שאתה יוצר בעצמך ב-Google AI Studio
   ומזין באפליקציה. המפתח נשמר **מוצפן במחסן המפתחות (Keychain) של המכשיר בלבד**, אינו
-  מוטמע בקוד האפליקציה, ואינו נשלח לשום שרת מלבד Google בעת שליחת תמונה שיזמת.
+  מוטמע בקוד האפליקציה, ואינו נשלח לשום שרת מלבד Google בעת פעולה שיזמת.
 - **עלות:** ל-Google Gemini יש שכבת שימוש חינמית שמספיקה לקריאת מערכת שעות. Google לא
   תחייב אותך אלא אם תפעיל חיוב (billing) בעצמך בחשבון Google שלך. למפתח האפליקציה אין
   גישה לחשבון Google שלך ואין לו עלות כלשהי בגין השימוש שלך.
 - **הסכמה:** לפני השליחה הראשונה האפליקציה מציגה מסך הסבר ומבקשת הסכמה מפורשת. אפשר לבטל בכל רגע.
 - **שכבה חינמית:** לפי תנאי Google, תוכן שנשלח דרך השכבה החינמית של Gemini API עשוי לשמש
   את Google לשיפור המוצרים שלה, וייתכן שייבדק על ידי בני אדם. זו הסיבה שהאפליקציה שולחת
-  רק את התמונות שבחרתם, ורק אחרי שאישרתם.
+  רק מה שבחרתם — תמונות או טקסט — ורק אחרי שאישרתם.
 - שימוש ב-Google Gemini כפוף למדיניות הפרטיות ולתנאי השימוש של Google.
 
 ## הוספה ליומן (אופציונלי)
@@ -73,7 +78,7 @@
 
 # Privacy Policy — Lomdim (English)
 
-Last updated: September 2026 (updated: consent screen and Gemini free-tier terms)
+Last updated: September 2026 (updated: AI flashcards and usage meter)
 
 **Lomdim** is built so that all your data stays with you.
 
@@ -102,17 +107,23 @@ managed by Apple and are not accessible to the developer.
 The app schedules local notifications (exam and due-date reminders) through the operating
 system. They are created and delivered on the device; nothing is sent externally.
 
-## Importing a timetable from a photo (optional)
+## AI features: timetable import and flashcard generation (optional)
 
-If you choose to use the "Import from a photo" feature in the timetable editor:
+Two features use **Google Gemini**; both are optional and run only when you ask:
 
-- **The photos** you select are sent to **Google Gemini** solely to recognize the text
-  in your timetable. The photos are not stored by us and are not sent to anyone else.
-  Each image is re-encoded before sending, which strips location (GPS) and other metadata.
+- **Import from a photo:** **the photos** you select are sent to Gemini solely to recognize
+  the text in your timetable. The photos are not stored by us and are not sent to anyone
+  else. Each image is re-encoded before sending, which strips location (GPS) and other metadata.
+- **Create flashcards with AI:** when you ask for it, **the text** of a class note or of an
+  exam's "what to study" is sent to Gemini together with the subject name, to draft questions
+  and answers. Nothing else is sent — not your timetable, homework or grades. You approve
+  every card before it is saved.
+- **Self-imposed limit:** the app caps itself at 20 AI actions a day and shows in "About"
+  how many actions and tokens were sent, as counted by Google.
 - **The API key** required to send them is a personal, free key that you create yourself
   in Google AI Studio and enter in the app. It is stored **encrypted in the device
   Keychain only**, is not embedded in the app's code, and is never sent to any server
-  other than Google when you send a photo you initiated.
+  other than Google for an action you initiated.
 - **Cost:** Google Gemini has a free usage tier that is sufficient for reading a
   timetable. Google will not charge you unless you enable billing yourself in your own
   Google account. The app developer has no access to your Google account and bears no
@@ -121,7 +132,7 @@ If you choose to use the "Import from a photo" feature in the timetable editor:
   explicit permission. You can cancel at any time.
 - **Free tier:** under Google's terms, content sent through the free tier of the Gemini API may
   be used by Google to improve its products, and may be reviewed by humans. That is why the app
-  sends only the photos you chose, and only after you agreed.
+  sends only what you chose — photos or text — and only after you agreed.
 - Use of Google Gemini is subject to Google's privacy policy and terms of service.
 
 ## Adding to your calendar (optional)
