@@ -23,8 +23,14 @@
 
 ## התראות
 
-האפליקציה מתזמנת התראות מקומיות (תזכורות למבחנים ולמועדי הגשה) דרך מערכת ההפעלה.
-ההתראות נוצרות ונשלחות במכשיר עצמו; שום מידע אינו נשלח החוצה.
+האפליקציה מתזמנת התראות מקומיות (תזכורות למבחנים ולמועדי הגשה, ושאלה בערב שלפני הגשה אם
+שיעורי הבית בוצעו) דרך מערכת ההפעלה. ההתראות נוצרות ונשלחות במכשיר עצמו; שום מידע אינו נשלח החוצה.
+
+## מסך הנעילה והווידג'ט
+
+הפעילות החיה (Live Activity) והווידג'ט מציגים את השיעור הנוכחי והבא על מסך הנעילה ומסך הבית.
+המידע נקרא ממערכת השעות שלכם במכשיר בלבד. שימו לב: מה שמופיע על מסך הנעילה גלוי לכל מי
+שמחזיק בטלפון; אפשר לכבות את הפעילות החיה במסך "אודות".
 
 ## תכונות AI: ייבוא מערכת מתמונה ויצירת כרטיסיות (אופציונלי)
 
@@ -104,8 +110,16 @@ managed by Apple and are not accessible to the developer.
 
 ## Notifications
 
-The app schedules local notifications (exam and due-date reminders) through the operating
-system. They are created and delivered on the device; nothing is sent externally.
+The app schedules local notifications (exam and due-date reminders, and a question the evening
+before homework is due asking whether it's done) through the operating system. They are created
+and delivered on the device; nothing is sent externally.
+
+## Lock screen and widget
+
+The Live Activity and the widget show the current and next class on the lock screen and home
+screen. The information is read from your timetable on the device only. Note that whatever
+appears on the lock screen is visible to anyone holding the phone; the Live Activity can be
+turned off in the About screen.
 
 ## AI features: timetable import and flashcard generation (optional)
 
