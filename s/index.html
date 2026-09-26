@@ -41,8 +41,8 @@
   <p id="sub">עוד רגע המערכת תיכנס אצלך.</p>
 
   <div id="fallback" class="hidden">
-    <a class="btn primary" href="https://apps.apple.com/il/app/id6808242504">להורדת לומדים — חינם</a>
-    <button class="btn plain" id="again">כבר יש לי את לומדים — לפתוח</button>
+    <button class="btn primary" id="again">פתיחת לומדים</button>
+    <a class="btn plain" href="https://apps.apple.com/il/app/id6808242504">אין לי את לומדים — להורדה חינם</a>
     <button class="btn plain" id="copy">העתקת ההודעה במקום</button>
     <p class="cap">אם הפתיחה לא עבדה: מעתיקים, נכנסים ללומדים ← מערכת שעות ← "מערכת ששיתפו איתי".</p>
   </div>
@@ -68,14 +68,16 @@
 
   open();
 
-  // If the app had opened, this page would be in the background and the timer would not have
-  // run to completion. Still being here after a beat means it is not installed — or the
-  // browser refused the scheme — so stop pretending and offer the two ways forward.
+  // Safari asks "Open this page in Lomdim?" before it will follow a custom scheme, and that
+  // question can sit on screen for a while. So this text must read sensibly BOTH while the
+  // dialog is up and after it is dismissed — claiming the app is not installed while iOS is
+  // offering to open it is the one thing it must not say.
   setTimeout(function () {
-    document.getElementById("title").textContent = "כמעט שם";
-    document.getElementById("sub").textContent = "לומדים לא נפתחה. כנראה היא לא מותקנת כאן.";
+    document.getElementById("title").textContent = "מערכת שעות מחכה לך";
+    document.getElementById("sub").textContent =
+      "אם קפץ חלון שמציע לפתוח את לומדים — אשרו אותו. אם לא:";
     document.getElementById("fallback").classList.remove("hidden");
-  }, 1600);
+  }, 1800);
 
   document.getElementById("again").addEventListener("click", open);
 
