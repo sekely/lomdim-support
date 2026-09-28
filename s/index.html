@@ -52,7 +52,28 @@
 (function () {
   // Everything after "#" is the timetable. It never left this phone to get here.
   var payload = location.hash.slice(1);
-  var deepLink = payload ? "lomdim://schedule?v=1&d=" + payload : null;
+  var deepLink = null;
+
+  // A payload starting with "~" is deflated. Inflating it *here* rather than in the app is
+  // what keeps 1.4 working: that build only knows the plain form, so the page hands every
+  // app the plain form and the compression stays where it matters — in the link itself.
+  // Apple's .zlib is raw DEFLATE, hence "deflate-raw" and not "deflate".
+  function inflate(b64) {
+    var bin = atob(b64.replace(/-/g, "+").replace(/_/g, "/"));
+    var bytes = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    var stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("deflate-raw"));
+    return new Response(stream).arrayBuffer().then(function (buf) {
+      var out = "", u8 = new Uint8Array(buf);
+      for (var j = 0; j < u8.length; j++) out += String.fromCharCode(u8[j]);
+      return btoa(out).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+    });
+  }
+
+  function ready(plain) {
+    deepLink = "lomdim://schedule?v=1&d=" + plain;
+    open();
+  }
 
   function open() { if (deepLink) location.href = deepLink; }
 
@@ -66,7 +87,15 @@
     return;
   }
 
-  open();
+  if (payload.charAt(0) === "~") {
+    inflate(payload.slice(1)).then(ready, function () {
+      // An old browser without DecompressionStream, or a corrupted payload. Pass it through
+      // unchanged — a current app can inflate it itself.
+      ready(payload);
+    });
+  } else {
+    ready(payload);
+  }
 
   // Safari asks "Open this page in Lomdim?" before it will follow a custom scheme, and that
   // question can sit on screen for a while. So this text must read sensibly BOTH while the
