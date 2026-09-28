@@ -56,6 +56,18 @@
   רק מה שבחרתם — תמונות או טקסט — ורק אחרי שאישרתם.
 - שימוש ב-Google Gemini כפוף למדיניות הפרטיות ולתנאי השימוש של Google.
 
+## שיתוף מערכת שעות
+
+כששולחים מערכת שעות למישהו, **המערכת נוסעת בתוך ההודעה עצמה**. אין שרת באמצע, לא שלנו
+ולא של אף אחד אחר, ושום דבר לא מועלה לאינטרנט.
+
+הקישור שבהודעה מוביל לדף סטטי שכל תפקידו להעביר את המערכת לאפליקציה. **החלק שאחרי
+הסולמית (#), שבו יושבים הנתונים, אינו נשלח לשרת** — כך בנוי פרוטוקול HTTP. השרת שמגיש
+את הדף רואה שביקשתם את הדף, ולא רואה את המערכת.
+
+השולח בוחר אילו ימים ושיעורים לשתף, והמקבל בוחר מה לקחת. לא נשלחים שיעורי בית, ציונים
+או הערות — רק מה שסומן.
+
 ## הוספה ליומן (אופציונלי)
 
 אם תבחרו להוסיף מבחן או מועד הגשה ליומן:
@@ -173,3 +185,18 @@ Updates to this policy will be posted on this page with a new date.
 ## Contact
 
 For privacy questions: ysekely@gmail.com
+
+
+## Sharing a timetable
+
+When you share a timetable, **it travels inside the message itself**. There is no server in
+the middle — not ours and not anyone else's — and nothing is uploaded.
+
+The link in the message opens a static page whose only job is to hand the timetable to the
+app. **The part after the '#', where the data sits, is never sent to the server** — that is
+how HTTP works. The server that serves the page sees that you asked for the page; it does not
+see your timetable.
+
+The sender chooses which days and classes go out, and the receiver chooses what to take. No
+homework, grades or notes are sent — only what was ticked.
+
