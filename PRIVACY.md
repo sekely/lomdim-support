@@ -161,6 +161,19 @@ Two features use **Google Gemini**; both are optional and run only when you ask:
   sends only what you chose — photos or text — and only after you agreed.
 - Use of Google Gemini is subject to Google's privacy policy and terms of service.
 
+## Sharing a timetable
+
+When you share a timetable, **it travels inside the message itself**. There is no server in
+the middle — not ours and not anyone else's — and nothing is uploaded.
+
+The link in the message opens a static page whose only job is to hand the timetable to the
+app. **The part after the '#', where the data sits, is never sent to the server** — that is
+how HTTP works. The server that serves the page sees that you asked for the page; it does not
+see your timetable.
+
+The sender chooses which days and classes go out, and the receiver chooses what to take. No
+homework, grades or notes are sent — only what was ticked.
+
 ## Adding to your calendar (optional)
 
 If you choose to add an exam or a due date to your calendar:
@@ -185,18 +198,3 @@ Updates to this policy will be posted on this page with a new date.
 ## Contact
 
 For privacy questions: ysekely@gmail.com
-
-
-## Sharing a timetable
-
-When you share a timetable, **it travels inside the message itself**. There is no server in
-the middle — not ours and not anyone else's — and nothing is uploaded.
-
-The link in the message opens a static page whose only job is to hand the timetable to the
-app. **The part after the '#', where the data sits, is never sent to the server** — that is
-how HTTP works. The server that serves the page sees that you asked for the page; it does not
-see your timetable.
-
-The sender chooses which days and classes go out, and the receiver chooses what to take. No
-homework, grades or notes are sent — only what was ticked.
-
